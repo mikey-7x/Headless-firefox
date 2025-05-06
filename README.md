@@ -5,6 +5,11 @@ Includes two modes: lightweight minimal desktop, and XFCE4 full desktop – both
 
 ---
 
+**##👁️Practical video**
+[![Watch the video](https://img.youtube.com/vi/wFQtvse5LRA/0.jpg)](https://youtu.be/wFQtvse5LRA)
+
+---
+
 ## 📁 Repository Contents
 
 | File       | Purpose                                                                 |
