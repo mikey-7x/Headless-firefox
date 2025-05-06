@@ -26,6 +26,8 @@ Includes two modes: lightweight minimal desktop, and XFCE4 full desktop – both
   - Full desktop with `XFCE4`
 - Access from another device using local WiFi
 - Touch-friendly via noVNC
+- Minimal mode is highly flexible and you can access your terminal (like termux's terminal) Headlessly,it is suitable in landscape mode
+- Full desktop mode not include any terminal but it specially designed for access Headless firefox with potrait mode 
 
 ---
 
