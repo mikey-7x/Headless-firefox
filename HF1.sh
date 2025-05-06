@@ -25,4 +25,4 @@ EOF
 chmod +x ~/.vnc/xstartup
 
 echo "[*] Setup complete."
-echo "Now run: ./hf.sh to start XFCE with noVNC in portrait fullscreen mode."
+echo "Now run: ./hf1.sh to start XFCE with noVNC in portrait fullscreen mode."
