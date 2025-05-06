@@ -63,10 +63,16 @@ Install required packages (Firefox, TigerVNC, noVNC, etc.)
 Create and configure ~/.vnc/xstartup with:
 
 ```
+nano ~/.vnc/xstartup
+```
+past this:
+
+```
 #!/data/data/com.termux/files/usr/bin/sh
 aterm -geometry 80x24+10+10 -ls &
 twm &
 ```
+save file:type "ctrl+x",enter y
 
 Then use:
 
@@ -91,11 +97,17 @@ Install XFCE4 and dependencies
 Set up ~/.vnc/xstartup with:
 
 ```
+nano ~/.vnc/xstartup
+```
+past this:
+
+```
 #!/data/data/com.termux/files/usr/bin/bash
 export DISPLAY=:1
 xrdb $HOME/.Xresources
 xfce4-session &
 ```
+save file:type "ctrl+x",enter y
 
 Then use:
 
@@ -122,7 +134,7 @@ Example:
 
 http://192.168.1.42:6080
 
-🍃hf.sh or hf1.sh also gives a link/ip using this you will able to share your Headless firefox 
+🍃The "hf.sh or hf1.sh" script also gives a link/ip.using this you will able to share your Headless firefox.so you can skip above ip finding steps 
 
 ---
 
