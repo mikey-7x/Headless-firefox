@@ -60,20 +60,6 @@ This will:
 
 Install required packages (Firefox, TigerVNC, noVNC, etc.)
 
-Create and configure ~/.vnc/xstartup with:
-
-```
-nano ~/.vnc/xstartup
-```
-past this:
-
-```
-#!/data/data/com.termux/files/usr/bin/sh
-aterm -geometry 80x24+10+10 -ls &
-twm &
-```
-save file:type "ctrl+x",enter y
-
 Then use:
 
 ```
@@ -93,21 +79,6 @@ chmod +x HF1.sh hf1.sh
 This will:
 
 Install XFCE4 and dependencies
-
-Set up ~/.vnc/xstartup with:
-
-```
-nano ~/.vnc/xstartup
-```
-past this:
-
-```
-#!/data/data/com.termux/files/usr/bin/bash
-export DISPLAY=:1
-xrdb $HOME/.Xresources
-xfce4-session &
-```
-save file:type "ctrl+x",enter y
 
 Then use:
 
