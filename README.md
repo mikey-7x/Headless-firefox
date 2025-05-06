@@ -50,6 +50,8 @@ Use either of the following scripts depending on the setup you prefer:
 #### ➤ Lightweight (xterm + twm):
 
 ```bash
+wget https://raw.githubusercontent.com/mikey-7x/Headless-firefox/refs/heads/main/HF.sh
+wget https://raw.githubusercontent.com/mikey-7x/Headless-firefox/refs/heads/main/hf.sh
 chmod +x HF.sh hf.sh
 ./HF.sh
 ```
@@ -60,10 +62,11 @@ Install required packages (Firefox, TigerVNC, noVNC, etc.)
 
 Create and configure ~/.vnc/xstartup with:
 
-
+```
 #!/data/data/com.termux/files/usr/bin/sh
 aterm -geometry 80x24+10+10 -ls &
 twm &
+```
 
 Then use:
 
@@ -75,6 +78,8 @@ Then use:
 ➤ XFCE4 Full Desktop:
 
 ```
+wget https://raw.githubusercontent.com/mikey-7x/Headless-firefox/refs/heads/main/HF1.sh
+wget https://raw.githubusercontent.com/mikey-7x/Headless-firefox/refs/heads/main/hf1.sh
 chmod +x HF1.sh hf1.sh
 ./HF1.sh
 ```
