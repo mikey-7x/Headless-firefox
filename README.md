@@ -154,7 +154,9 @@ Show Keyboard: Tap keyboard icon from top menu
 
 You must use the same WiFi/router between Android and the device accessing Firefox.
 
-Avoid mobile hotspot or mobile data – this is a LAN-only solution.
+Avoid mobile mobile data – this is a LAN-based solution.
+
+you can also use common hotspot for this project.
 
 Firefox may take a few seconds to appear inside the VNC view.
 
@@ -201,12 +203,16 @@ Devices with 2GB+ RAM
 
 ---
 
-☕ Credits
+# License
 
-Created by mikey-7x
-Feel free to star the repo or contribute!
+This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-Let me know if you want a banner image, embedded screenshots, or custom styling for GitHub rendering. Would you like me to also auto-generate the LICENSE file and `.gitignore`?
+☕ Credits
 
+Developed with  ❤️ by **[mikey-7x](https://github.com/mikey-7x)** 🚀🔥  
+
+Feel free to star the repo or contribute!
+
+---
