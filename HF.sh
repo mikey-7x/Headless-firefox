@@ -1,43 +1,26 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-# RUNTIME SCRIPT — Start GUI and Firefox session
+# SETUP SCRIPT — One-time installation and configuration
 
-# Kill old processes if any
-pkill -f websockify
-pkill -f Xvnc
-pkill -f novnc_proxy
-pkill -f firefox
+echo "[*] Updating Termux..."
+pkg update -y && pkg upgrade -y
 
-# Launch Termux-X11 GUI
-am start --user 0 -n x11.termux/.MainActivity >/dev/null 2>&1
+echo "[*] Installing required packages..."
+pkg install -y wget git tigervnc python firefox
 
-# Start VNC server
-vncserver :1
+echo "[*] Cloning noVNC..."
+git clone https://github.com/novnc/noVNC ~/noVNC
 
-# Wait for X to be ready
-sleep 2
+echo "[*] Creating VNC xstartup file..."
+mkdir -p ~/.vnc
 
-# Start noVNC proxy
-cd ~/noVNC/utils
-./novnc_proxy --vnc localhost:5901 > ~/novnc.log 2>&1 &
+cat > ~/.vnc/xstartup << 'EOF'
+#!/data/data/com.termux/files/usr/bin/sh
+aterm -geometry 80x24+10+10 -ls &
+twm &
+EOF
 
-echo
-echo "noVNC running at: http://localhost:6080/vnc.html"
-echo "Now launching Firefox..."
+chmod +x ~/.vnc/xstartup
 
-# Launch Firefox in DISPLAY=:1
-export DISPLAY=:1
-#surf https://google.com &
-#xfce4 &
-sleep 2
-firefox --kiosk https://google.com &
-pid=$!
-
-# Wait for Firefox to close
-wait $pid
-
-# After Firefox closes
-echo "[*] Firefox exited. Cleaning up..."
-vncserver -kill :1
-pkill -f websockify
-pkill -f novnc_proxy
+echo "[*] Setup complete."
+echo "Now run: ./hf.sh to start XFCE with noVNC in portrait fullscreen mode."
