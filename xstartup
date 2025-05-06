@@ -1,4 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-export DISPLAY=:1
-xrdb $HOME/.Xresources
-xfce4-session &
