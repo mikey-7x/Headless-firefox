@@ -132,7 +132,7 @@ Show Keyboard: Tap keyboard icon from top menu
 
 You must use the same WiFi/router between Android and the device accessing Firefox.
 
-Avoid mobile mobile data – this is a LAN-based solution.
+Avoid using mobile data at target device – this is a LAN-based solution.
 
 you can also use common hotspot for this project.
 
