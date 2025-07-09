@@ -114,6 +114,8 @@ http://192.168.1.42:6080
 
 🍃The "hf.sh or hf1.sh" script also gives a link/ip.using this you will able to share your Headless firefox.so you can skip above ip finding steps 
 
+password:mikey7x
+
 ---
 
 ✋ Touch & noVNC Usage Tips
