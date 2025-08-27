@@ -157,6 +157,24 @@ Then to run Firefox:
 ```
 ./hf1.sh
 ```
+🐍Share Headless Firefox word wide🐍
+install:
+```
+pkg install cloudflared -y
+```
+run 
+```
+./hf.sh
+```
+or 
+```
+./hf1.sh
+```
+start sharing Headless Firefox world wide
+```
+cloudflared tunnel --url http://localhost:6080
+```
+find link from output of this command which gives link to share it.
 
 ---
 
